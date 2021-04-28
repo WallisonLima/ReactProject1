@@ -1,10 +1,12 @@
+import { useState } from 'react';
 import { Dropdown } from './components/dropdown/Dropdown';
 import { List } from './components/list/List';
-import { useState } from 'react';
+import { SelectedFunc } from './components/selected/SelectedFunc'
+
 
 function App() {
-  const options = ['gol', 'mercedes', 'bmw']
-  const [selectCar, setSelectCar] = useState(null)
+  const options = ['Bilbo', 'Guima', 'Vitao']
+  const [selectFunc, setSelectCar] = useState(null)
   const [optionList, setOptionList] = useState(options)
 
   const setSelectCarResp = (option) => {
@@ -25,17 +27,17 @@ function App() {
 
   return (
     <div className="App">
-      {selectCar && <div>Seu Carro é {selectCar} </div>}
+
       <List
-        title={"Lista de carros"}
+        title={"Lista de Funcionários"}
         options={optionList}
       />
       <Dropdown
-        title="Selecione seu carro"
+        title="Selecione um Funcionário"
         options={optionList}
         onSelect={setSelectCarResp}
       />
-
+      {selectFunc && <SelectedFunc select={selectFunc} />}
     </div>
   );
 }
