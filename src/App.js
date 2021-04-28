@@ -26,16 +26,13 @@ function App() {
   return (
     <div className="App">
       {selectCar && <div>Seu Carro é {selectCar} </div>}
-
       <List
         title={"Lista de carros"}
         options={optionList}
       />
-
-
       <Dropdown
         title="Selecione seu carro"
-        options={options}
+        options={optionList}
         onSelect={setSelectCarResp}
       />
 
