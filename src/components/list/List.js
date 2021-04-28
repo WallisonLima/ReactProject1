@@ -1,4 +1,6 @@
 
+import { styles } from './styleCss'
+
 
 export const List = ({ title, options }) => {
     return (
@@ -19,29 +21,5 @@ export const List = ({ title, options }) => {
     );
 };
 
-const styles = {
-    container: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        width: '100%',
-        padding: '80px',
-        color: 'white',
-        border: '1px solid #1890ff',
-        background: '#e63946'
-    },
-    title: {
-        fontSize: 35,
-    },
-    list: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        fontSize: 20,
-        alignText: 'center',
-    },
-    item: {
-        marginTop: 10
-    }
-}
+
 
