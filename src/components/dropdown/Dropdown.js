@@ -20,9 +20,12 @@ export const Dropdown = ({ title, options, onSelect }) => {
                                 <li style={styles.item}
                                     key={option}
                                     role="menuitem"
-                                    onClick={() => handleSelection(option)}
                                 >
-                                    {option}
+                                    <button style={styles.button}
+                                        onClick={() => handleSelection(option)}
+                                    >
+                                        {option}
+                                    </button>
                                 </li>
                             ))}
                         </ul>
@@ -60,8 +63,8 @@ const styles = {
         alignItems: 'center',
         fontSize: 20,
         alignText: 'center',
-    }, 
-    item:{
+    },
+    item: {
         marginTop: 10
     }
 
