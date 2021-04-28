@@ -1,15 +1,18 @@
 
 
 
-export const Title = ({info})=>{
+export const Title = ({ info }) => {
     return (
         <div style={styles.container}>
-            <div style={styles.icon}>
-                icon
+            <div style={styles.containerTitle}>
+                <div style={styles.icon}>
+                    icon
+                </div>
+                <div style={styles.title}>
+                    {info}
+                </div>
             </div>
-            <div style={styles.title}>
-                {info}
-            </div>
+            <div ></div>
         </div>
     )
 }
@@ -23,13 +26,19 @@ const styles = {
         width: '100%',
         color: 'white',
         fontFamily: 'Arial',
-        padding: '20px',
-        height:'80px',
     },
-    icon:{
+    containerTitle: {
+        display: 'flex',
+        width: '100%',
+        color: 'white',
+        fontFamily: 'Arial',
+        padding: '20px',
+        height: '80px',
+    },
+    icon: {
         marginRight: 15
     },
-    title:{
+    title: {
         fontSize: 70,
         fontWeight: '950'
     }
