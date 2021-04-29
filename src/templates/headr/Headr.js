@@ -1,10 +1,11 @@
-
+import { faAtom } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export const Headr = () => {
     return (
         <header style={styles.container}>
-            <div style={styles.logo}>LOGO</div>
+            <div style={styles.logo}><i><FontAwesomeIcon icon={faAtom} /></i> argon</div>
             <div style={styles.options}>
                 <div style={styles.item}>
                     <a style={styles.button}>
