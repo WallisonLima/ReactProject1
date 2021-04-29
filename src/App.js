@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Headr } from './templates/headr/Headr'
 import { ContentTop } from './templates/contentTop/ContentTop'
+import { Footr } from './templates/footr/Footr'
 import { Button } from './components/button/Button'
 import { Dropdown } from './components/dropdown/Dropdown';
 import { List } from './components/list/List';
@@ -43,24 +44,10 @@ function App() {
         <div sytle={styles.contentTop}>
           <ContentTop info={'argon'} />
         </div>
-       
-
-        
-          {/* <div style={styles.contentTop}>
-          <List
-            title={"Lista de Funcionários"}
-            options={optionList}
-          />
-          <Dropdown
-            title="Selecione um Funcionário"
-            options={optionList}
-            onSelect={setSelectCarResp}
-          />
-          {selectFunc && <SelectedFunc select={selectFunc} />}
-        </div>
-        <div style={styles.img}>
-          <Image images={images} />
-        </div> */}
+         
+      </div>
+      <div className='footr'>
+        <Footr />
       </div>
     </body>
   );
