@@ -1,0 +1,64 @@
+.containerContentTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    margin-bottom: 60px;
+}
+
+.containerTitle {
+    display: flex;
+    width: 100%;
+    color: white;
+    font-family: Arial;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto 40px auto;
+}
+
+.icon {
+    margin-right: 15px;
+     font-size: 55px;
+}
+
+
+.title {
+    font-size: 65px;
+    font-weight: 950;
+}
+
+
+.containerDesc {
+    display: flex;
+    width: 78%;
+
+}
+
+
+.contentDescText {
+    font-size: 20px;
+    text-align: center;
+}
+
+.containerButton {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    margin-top: 60px;
+    margin-left: 18%;
+}
+
+.contentButton {
+    margin: 10px 10px;
+    border-radius: 4px;
+}
+
+.containerBack{
+    margin-top: 40px;
+}

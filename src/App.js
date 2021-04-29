@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { Headr } from './templates/headr/Headr'
+import { ContentTop } from './templates/contentTop/ContentTop'
+import { Button } from './components/button/Button'
 import { Dropdown } from './components/dropdown/Dropdown';
 import { List } from './components/list/List';
 import { SelectedFunc } from './components/selected/SelectedFunc';
 import { Image } from './components/image/Image'
-import { Headr } from './components/headr/Headr'
-import { Title } from './components/title/Title'
+
 
 const images = [
   { id: 1, url: 'https://png.pngtree.com/element_origin_min_pic/17/08/04/3528c203fea0c31986221c51e598a6d4.jpg', desc: 'wallison e lindo' },
@@ -37,11 +39,14 @@ function App() {
       <header>
         <Headr />
       </header>
-      <div className="App" style={styles.body} >
-        <div >
-          <Title info={'argon'} />
+      <div className="App" style={styles.contentAll} >
+        <div sytle={styles.contentTop}>
+          <ContentTop info={'argon'} />
         </div>
-        <div style={styles.contentTop}>
+       
+
+        
+          {/* <div style={styles.contentTop}>
           <List
             title={"Lista de Funcionários"}
             options={optionList}
@@ -55,8 +60,7 @@ function App() {
         </div>
         <div style={styles.img}>
           <Image images={images} />
-        </div>
-
+        </div> */}
       </div>
     </body>
   );
@@ -66,18 +70,13 @@ export default App;
 
 
 const styles = {
-  body: {
+  contentAll: {
     display: 'flex',
     flexDirection: 'column',
     widht: '100%',
-    padding: '8%',
     background: '#e63946',
     alignItems: 'center',
+    padding: '50px'
   },
-  contentTop: {
-    marginRight: '15%'
-  },
-  img: {
-    marginLeft: '25%'
-  }
+ 
 }
