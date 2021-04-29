@@ -41,11 +41,11 @@ export const Headr = () => {
 const styles = {
     container: {
         display: 'flex',
-        padding: 15,
         background: '#e63946',
         color: 'white',
         fontSize: 18,
         fontFamily: 'Arial',
+        
     },
     logo: {
         padding: '15px 32px',
@@ -53,7 +53,7 @@ const styles = {
     },
     options: {
         display: 'flex',
-        marginLeft: '40%'
+        marginLeft: '30%'
     },
     item: {
         marginRigth: 40,
