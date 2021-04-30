@@ -2,11 +2,7 @@ import { useState } from 'react';
 import { Headr } from './templates/headr/Headr'
 import { ContentTop } from './templates/contentTop/ContentTop'
 import { Footr } from './templates/footr/Footr'
-import { Button } from './components/button/Button'
-import { Dropdown } from './components/dropdown/Dropdown';
-import { List } from './components/list/List';
-import { SelectedFunc } from './components/selected/SelectedFunc';
-import { Image } from './components/image/Image'
+import './appStyle.css'
 
 
 const images = [
@@ -40,8 +36,8 @@ function App() {
       <header>
         <Headr />
       </header>
-      <div className="App" style={styles.contentAll} >
-        <div sytle={styles.contentTop}>
+      <div className="contentAll"  >
+        <div className='contentTop'>
           <ContentTop info={'argon'} />
         </div>
          
@@ -55,15 +51,3 @@ function App() {
 
 export default App;
 
-
-const styles = {
-  contentAll: {
-    display: 'flex',
-    flexDirection: 'column',
-    widht: '100%',
-    background: '#e63946',
-    alignItems: 'center',
-    padding: '50px'
-  },
- 
-}

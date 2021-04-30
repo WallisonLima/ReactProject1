@@ -1,4 +1,4 @@
-import './style.css'
+import './contentTopStyle.css'
 import { faAtom, faMehBlank } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from '../../components/button/Button'

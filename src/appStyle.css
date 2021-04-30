@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+}
+
+
+.contentAll {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #e63946;
+    align-items: center;
+    padding: 0px;
+}

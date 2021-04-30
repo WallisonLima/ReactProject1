@@ -1,0 +1,48 @@
+.button1{
+    background-color: white; 
+    border: none;
+    border-radius: 4px;
+    color: #1d1e20;
+    padding: 16px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button2{
+    background-color: #1d1e20; 
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button3{
+    background: #5E73E0;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 10px 0px 0px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.buttonHeadr{
+    background: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0px 10px 10px;
+    color: #e63946;
+    font-weight: 600;
+    cursor: pointer;
+}
